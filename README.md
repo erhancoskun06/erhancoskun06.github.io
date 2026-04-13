@@ -1,24 +1,30 @@
-# GitHub Portfolio Site
+# ECOSKUN Technology Landing Page
 
-Bu klasor, GitHub Pages ile yayinlanabilecek statik portfoy sitesini icerir.
+Bu klasor, `erhancoskun06.github.io` adresi icin hazirlanan kurumsal teknoloji odakli statik ana sayfayi icerir.
 
-## Yapi
+## Icerik
 
-- `index.html`: Ana sayfa
-- `styles.css`: Tasarim ve responsive duzen
-- `script.js`: Mobil menu davranisi
+- `index.html`: Sirket diliyle yeniden yazilan ana sayfa
+- `styles.css`: Premium gorunum, responsive duzen ve gorsel sistem
+- `script.js`: Mobil menu davranisi ve hareketli AI sinir agi arka plan animasyonu
+- `.nojekyll`: GitHub Pages statik dagitim uyumlulugu
 
-## GitHub Pages yayini
+## Yeni Yapi
 
-1. GitHub'da tam olarak `erhancoskun06.github.io` adinda yeni bir public repo olusturun.
-2. Bu klasordeki tum dosyalari repo kokune yukleyin.
-3. GitHub'da repo icinde `Settings > Pages` bolumune girin.
-4. `Deploy from a branch` secin.
-5. `main` branch ve `/root` klasorunu secip kaydedin.
-6. Site birkac dakika icinde `https://erhancoskun06.github.io/` adresinde acilir.
+- Kisisel portfoy dili kaldirildi.
+- Kurumsal firma sunumu odakli yeni bir bilgi mimarisi kuruldu.
+- App Store urunu, gelecek uygulamalar ve teknoloji haberleri icin hazir bolumler eklendi.
+- Arka planda canvas tabanli hareketli sinir agi animasyonu tasarlandi.
 
-## Kisisellestirme
+## Yayin
 
-- `index.html` icindeki e-posta adresini kendi adresinizle degistirin.
-- `index.html` icindeki proje metinlerini gercek referanslarinizla guncelleyin.
-- Isterseniz daha sonra proje kartlarina ekran goruntuleri veya logolar da ekleyebilirim.
+1. Repo adi `erhancoskun06.github.io` olacak sekilde GitHub'da public olarak olusturulmalidir.
+2. Dosyalar repo kokune eklenmelidir.
+3. GitHub Pages ayari `Deploy from a branch > main > /root` olarak secilmelidir.
+4. Yayin tamamlandiginda site `https://erhancoskun06.github.io/` adresinden erisilebilir olur.
+
+## Sonraki Guncellemeler
+
+- `mailto:iletisim@example.com` alani gercek kurumsal e-posta ile degistirilebilir.
+- App Store uygulama alani; urun adi, store linki ve ekran goruntuleri ile doldurulabilir.
+- Teknoloji haberleri bolumu daha sonra kart veya liste bazli gercek icerikle genisletilebilir.

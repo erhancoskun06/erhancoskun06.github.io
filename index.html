@@ -3,32 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teknolojik Geliştirici | Dijital Uretim ve Yazilim Cozumleri</title>
+  <title>ECOSKUN Technology | Kurumsal Yazilim ve Dijital Sistemler</title>
   <meta
     name="description"
-    content="Program, uygulama ve web sayfasi gelistiren teknolojik gelistirici icin modern portfoy sitesi."
+    content="Kurumsal yazilim, dijital sistemler, yapay zeka odakli urun gelistirme ve teknoloji guncemini bir araya getiren modern firma sayfasi."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="page-shell">
+  <canvas class="neural-canvas" aria-hidden="true"></canvas>
+  <div class="noise-layer" aria-hidden="true"></div>
+
+  <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="#top">
-        <span class="brand-mark"></span>
-        <span class="brand-text">erhancoskun06</span>
+      <a class="brand" href="#top" aria-label="Ana sayfa">
+        <span class="brand-badge">EC</span>
+        <span class="brand-copy">
+          <strong>ECOSKUN Technology</strong>
+          <small>Digital Systems and Applied Intelligence</small>
+        </span>
       </a>
 
       <nav class="site-nav" aria-label="Ana menu">
-        <a href="#services">Odak Alanlari</a>
-        <a href="#projects">Calismalar</a>
-        <a href="#process">Yaklasim</a>
-        <a href="#contact">Baglantilar</a>
+        <a href="#platform">Platform</a>
+        <a href="#capabilities">Yetkinlikler</a>
+        <a href="#ventures">Urunler</a>
+        <a href="#insights">Teknoloji Guncemi</a>
+        <a href="#contact">Iletisim</a>
       </nav>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menuyu ac">
@@ -40,172 +47,186 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Teknoloji Odakli Gelisim</p>
-          <h1>Degisen teknolojileri takip ediyor, deneyerek ogreniyor ve dijital fikirleri gercege donusturuyorum.</h1>
+          <p class="eyebrow">Kurumsal Teknoloji Yuzeyi</p>
+          <h1>Yazilim, yapay zeka ve dijital operasyonlari ayni kurumsal cati altinda birlestiren yeni nesil teknoloji sayfasi.</h1>
           <p class="hero-text">
-            Bu sayfa ticari bir vitrin olmaktan cok, teknolojiyle birlikte gelisen bir uretim alani. Web gelistirme,
-            uygulama mantigi, otomasyon, arayuz kurgusu ve yeni araclara uyum gibi konularda surekli deniyor,
-            ogreniyor ve urettiklerimi bir araya getiriyorum.
+            ECOSKUN Technology; urun gelistirme, uygulama lansmani, otomasyon ve veri odakli sistem tasarimini
+            premium bir dijital yapi icerisinde sunmak uzere konumlanan kurumsal bir vitrindir. Sayfa; yayinlanan
+            uygulamalar, yeni teknoloji urunleri ve sektorel guncellemeler icin buyuyebilen merkezi bir merkeze donusturuldu.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Neler Uzerinde Calisiyorum</a>
-            <a class="button button-secondary" href="#process">Yaklasimimi Incele</a>
+            <a class="button button-primary" href="#ventures">Urun Ekosistemini Incele</a>
+            <a class="button button-secondary" href="#insights">Teknoloji Guncemi</a>
           </div>
-
-          <ul class="hero-metrics" aria-label="One cikan metrikler">
-            <li>
-              <strong>Uyum</strong>
-              <span>Yeni teknolojilere hizli adapte olma ve deneme kulturu</span>
-            </li>
-            <li>
-              <strong>Uretim</strong>
-              <span>Web, uygulama ve otomasyon ekseninde surekli gelistirme</span>
-            </li>
-            <li>
-              <strong>Merak</strong>
-              <span>Araclari sadece kullanmak degil, mantigini anlayarak ilerleme</span>
-            </li>
-          </ul>
         </div>
 
-        <div class="hero-panel">
-          <div class="status-card">
-            <span class="status-dot"></span>
-            <span>Teknolojiyi takip eden aktif gelisim alani</span>
+        <aside class="hero-board" aria-label="Kurumsal ozet paneli">
+          <div class="hero-panel hero-panel-primary">
+            <span class="panel-kicker">Operational Focus</span>
+            <strong>Kurumsal yazilim altyapisi, gelisen urun portfoyu ve AI destekli dijital deneyimler.</strong>
           </div>
+          <div class="hero-stats">
+            <article>
+              <span>01</span>
+              <h2>Kurumsal Kimlik</h2>
+              <p>Kisisel portfoy dili yerine firma standardinda sade, guven veren ve premium bir pozisyonlama.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h2>Urun Merkezi</h2>
+              <p>App Store uygulamalari, gelisen projeler ve gelecek lansmanlar icin hazir yayin alani.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h2>Teknoloji Haberleri</h2>
+              <p>Zamanla eklenecek trendler, yapay zeka haberleri ve sirket guncellemeleri icin ayri modul.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
 
-          <div class="signal-grid">
-            <article class="signal-card">
-              <p>Odak</p>
-              <strong>Teknolojiye ayak uyduran uretim pratigi</strong>
-            </article>
-            <article class="signal-card">
-              <p>Alanlar</p>
-              <strong>Web, uygulama, otomasyon ve arayuz mantigi</strong>
-            </article>
-            <article class="signal-card">
-              <p>Yaklasim</p>
-              <strong>Deney, ogren, gelistir, tekrar et</strong>
-            </article>
-            <article class="signal-card">
-              <p>Sonuc</p>
-              <strong>Surekli evrilen teknik birikim ve uygulanabilir ciktılar</strong>
-            </article>
-          </div>
+      <section class="marquee" aria-label="Odak basliklari">
+        <div class="marquee-track">
+          <span>AI Enhanced Systems</span>
+          <span>Corporate Web Presence</span>
+          <span>Product Showcase</span>
+          <span>Technology Newsroom</span>
+          <span>App Store Promotion</span>
+          <span>Digital Operations</span>
         </div>
       </section>
 
-      <section class="section" id="services">
+      <section class="section section-grid" id="platform">
         <div class="section-heading">
-          <p class="eyebrow">Odak Alanlari</p>
-          <h2>Teknolojiyi yakindan takip ederken en cok zaman ayirdigim gelisim alanlari.</h2>
+          <p class="eyebrow">Platform Mimarisi</p>
+          <h2>Kurumsal teknoloji markasi gibi davranan, gelecekte buyumeye uygun ana yapi.</h2>
         </div>
 
-        <div class="cards cards-three">
-          <article class="info-card">
-            <span class="card-index">01</span>
-            <h3>Web Teknolojileri</h3>
-            <p>Arayuz kurgusu, performans, tarayici davranislari ve modern web deneyimi uzerine calisiyorum.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-index">02</span>
-            <h3>Uygulama Mantigi</h3>
-            <p>Masaustu ve web tabanli uygulamalarda isleyen sistem kurgulari ve veri akislarini ogreniyorum.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-index">03</span>
-            <h3>Otomasyon ve Araclar</h3>
-            <p>Tekrarlayan surecleri azaltan yapilar, yeni araclar ve gelistirme destek sistemleri ilgimi cekiyor.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section showcase" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Calismalar</p>
-          <h2>Para kazanma odagindan cok, teknolojiyle birlikte ilerleme istegini gosteren basliklar.</h2>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card project-wide">
-            <div>
-              <p class="project-type">Sistem Dusuncesi</p>
-              <h3>Planlama, izleme ve veri akislarini tek yerde birlestiren yapilar uzerine calismalar</h3>
-            </div>
+        <div class="platform-layout">
+          <article class="feature-card feature-card-large">
+            <p class="card-label">Ana Sunum Katmani</p>
+            <h3>Kurumsal acilis deneyimi; guven, kalite ve teknoloji hissini ilk ekranda verir.</h3>
             <p>
-              Amacim sadece bir ekran yapmak degil; farkli teknolojileri bir araya getirip calisan, anlasilir ve
-              gelistirilebilir yapilar kurmak.
+              Yeni yapi; kontrollu tipografi, kararli bosluk sistemi, premium renk paleti ve hareketli sinir agi
+              arka planini ayni dilde birlestirir.
             </p>
           </article>
-          <article class="project-card">
-            <p class="project-type">Web Deneyimi</p>
-            <h3>Kullanim hissi, akis ve performans dengesini arayan sayfa denemeleri</h3>
+
+          <article class="feature-card">
+            <p class="card-label">Moduler Icerik</p>
+            <h3>Yeni urunler, uygulama tanitimlari ve haber kartlari kolayca eklenebilir.</h3>
           </article>
-          <article class="project-card">
-            <p class="project-type">Yazilim Kurgusu</p>
-            <h3>Gercek ihtiyaclara dokunan ama ayni zamanda ogrenmeyi besleyen uygulama fikirleri</h3>
-          </article>
-          <article class="project-card">
-            <p class="project-type">Otomasyon Meraki</p>
-            <h3>Tekrari azaltan, sureci sadeleştiren ve mantigi gorunur kilan denemeler</h3>
+
+          <article class="feature-card">
+            <p class="card-label">Kurumsal Konumlama</p>
+            <h3>Ben dili yerine cozum, yapi ve teknoloji odagini one cikarir.</h3>
           </article>
         </div>
       </section>
 
-      <section class="section timeline" id="process">
+      <section class="section" id="capabilities">
         <div class="section-heading">
-          <p class="eyebrow">Yaklasim</p>
-          <h2>Teknolojiye ayak uydurmak icin benimsedigim gelisim ritmi.</h2>
+          <p class="eyebrow">Yetkinlikler</p>
+          <h2>Markanin anlatmak istedigi teknoloji alanlari tek bakista anlasilir hale getirildi.</h2>
         </div>
 
-        <div class="timeline-list">
-          <article class="timeline-item">
-            <span>01</span>
-            <div>
-              <h3>Gozlem</h3>
-              <p>Yeni araclari, guncel yaklasimlari ve ihtiyac doguran degisimleri takip ederim.</p>
-            </div>
+        <div class="capability-grid">
+          <article class="capability-card">
+            <span class="capability-index">A1</span>
+            <h3>Kurumsal Web Arayuzu</h3>
+            <p>Premium gorunumlu, gelecekte kurumsal sayfalara ve detay ekranlarina genisleyebilen modern deneyim.</p>
           </article>
-          <article class="timeline-item">
-            <span>02</span>
-            <div>
-              <h3>Deneme</h3>
-              <p>Ogrendigim teknolojileri kucuk prototipler, sayfalar ve uygulama fikirleri uzerinde denerim.</p>
-            </div>
+          <article class="capability-card">
+            <span class="capability-index">A2</span>
+            <h3>Urun ve Uygulama Sunumu</h3>
+            <p>Yayinda olan uygulamalar ile sonraki lansmanlar icin ayri tanitim bloklari ve guven odakli yapi.</p>
           </article>
-          <article class="timeline-item">
-            <span>03</span>
-            <div>
-              <h3>Derinlesme</h3>
-              <p>Calisan parcalarin neden calistigini anlamaya, mimariyi ve akis mantigini kavramaya odaklanirim.</p>
-            </div>
+          <article class="capability-card">
+            <span class="capability-index">A3</span>
+            <h3>AI Destekli Estetik</h3>
+            <p>Hareketli sinir agi arka plani ile teknoloji hissi veren ama okunabilirligi bozmayan rafine atmosfer.</p>
           </article>
-          <article class="timeline-item">
-            <span>04</span>
-            <div>
-              <h3>Paylasim</h3>
-              <p>Olusan birikimi duzenli hale getirir, gorunur kilar ve yeni adimlar icin bir temel olarak kullanirim.</p>
-            </div>
+          <article class="capability-card">
+            <span class="capability-index">A4</span>
+            <h3>Guncel Icerik Merkezi</h3>
+            <p>Teknoloji haberleri, urun duyurulari ve sektor icgoru notlari icin gelecege hazir bolumleme.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="ventures">
+        <div class="section-heading">
+          <p class="eyebrow">Urun Ekosistemi</p>
+          <h2>Bugunun urunlerini tanitmak ve yarinin uygulamalarini eklemek icin kurulan kurumsal vitrin.</h2>
+        </div>
+
+        <div class="venture-layout">
+          <article class="venture-card venture-card-highlight">
+            <p class="card-label">App Store Showcase</p>
+            <h3>Yayinda olan uygulama icin premium tanitim alani hazirlandi.</h3>
+            <p>
+              Bu bolume uygulama adi, App Store linki, ekran goruntuleri ve kisa deger onerisi eklendiginde sayfa
+              dogrudan urun tanitimi yapabilecek seviyede hazir durumdadir.
+            </p>
+            <a class="text-link" href="#contact">Link ve medya bilgilerini buraya ekleyebiliriz</a>
+          </article>
+
+          <article class="venture-card">
+            <p class="card-label">Roadmap Slot</p>
+            <h3>Hazirlanan uygulamalar ve yeni dijital araclar icin genisleme alanlari.</h3>
+            <ul class="list-clean">
+              <li>Yakinda yayinlanacak urun bloklari</li>
+              <li>Kurumsal referans ve vaka kutulari</li>
+              <li>Servis ve platform detay sayfalari</li>
+            </ul>
+          </article>
+
+          <article class="venture-card">
+            <p class="card-label">Deployment Ready</p>
+            <h3>Statik ve hizli yapi GitHub Pages uzerinden sorunsuz yayin icin optimize edildi.</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="insights">
+        <div class="section-heading">
+          <p class="eyebrow">Teknoloji Guncemi</p>
+          <h2>Yapay zeka, urun gelistirme ve dijital donusum basliklari icin editorial alan.</h2>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight-card">
+            <p class="card-label">Editorial Framework</p>
+            <h3>Guncel teknoloji haberleri icin modern bir newsroom duzeni.</h3>
+            <p>Baslik, tarih, kategori ve one cikan analiz kutulari ileride icerik girdikce dogrudan kullanilabilir.</p>
+          </article>
+          <article class="insight-card">
+            <p class="card-label">Future Module</p>
+            <h3>AI trendleri, urun duyurulari ve pazar gelismeleri ayni dili koruyarak eklenebilir.</h3>
+          </article>
+          <article class="insight-card">
+            <p class="card-label">Content Logic</p>
+            <h3>Kurumsal ana sayfadan blog veya haber detay ekranlarina gecis icin yapi hazir.</h3>
           </article>
         </div>
       </section>
 
       <section class="section contact-section" id="contact">
         <div class="contact-card">
-          <div>
-            <p class="eyebrow">Baglantilar</p>
-            <h2>Teknoloji yolculugumu takip etmek veya iletisim kurmak isterseniz buradan ulasabilirsiniz.</h2>
-            <p class="contact-text">
-              Burasi bir satis sayfasi degil; daha cok ilgilendigim teknolojileri, uretim mantigimi ve gelisim
-              surecimi topladigim dijital bir alan. Isterseniz e-posta ve GitHub uzerinden baglanti kurabilirsiniz.
+          <div class="contact-copy">
+            <p class="eyebrow">Iletisim ve Sonraki Adim</p>
+            <h2>Kurumsal yapi tamamlandi; siradaki asama icerik, uygulama kartlari ve canli baglantilarin eklenmesi.</h2>
+            <p>
+              App Store uygulamasi, teknoloji haberleri ve yayinlanacak yeni urunler icin gerekli alanlar olusturuldu.
+              Bundan sonraki genisleme adimlari bu temel uzerinden hizli sekilde ilerletilebilir.
             </p>
           </div>
 
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:iletisim@example.com">Iletisim Kur</a>
+          <div class="contact-panel">
+            <a class="button button-primary" href="mailto:iletisim@example.com">Kurumsal Iletisim</a>
             <a class="button button-secondary" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">
-              GitHub Profili
+              GitHub Presence
             </a>
           </div>
         </div>
