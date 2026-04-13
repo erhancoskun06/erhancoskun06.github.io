@@ -1,295 +1,334 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ECOSKUN Technology | Kurumsal Yazilim ve Dijital Sistemler</title>
-  <meta
-    name="description"
-    content="Kurumsal yazilim, dijital sistemler, yapay zeka odakli urun gelistirme ve teknoloji guncemini bir araya getiren modern firma sayfasi."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="./styles.css">
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ECOSKUN Technology | Architecting the Future of Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#1c2026",
+                    "on-secondary-container": "#00616d",
+                    "secondary": "#bdf4ff",
+                    "on-surface": "#dfe2eb",
+                    "outline-variant": "#3b494c",
+                    "tertiary": "#f2e9ff",
+                    "surface-tint": "#adc7ff",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#31353c",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary": "#00363d",
+                    "on-tertiary-fixed": "#23005b",
+                    "tertiary-fixed": "#e9ddff",
+                    "secondary-fixed": "#9cf0ff",
+                    "inverse-on-surface": "#2d3137",
+                    "surface": "#10141a",
+                    "on-tertiary": "#3c0090",
+                    "surface-container-lowest": "#0a0e14",
+                    "primary": "#e7ecff",
+                    "on-secondary-fixed-variant": "#004f58",
+                    "on-surface-variant": "#bac9cc",
+                    "on-tertiary-container": "#6c00f7",
+                    "surface-container-low": "#181c22",
+                    "on-secondary-fixed": "#001f24",
+                    "surface-variant": "#31353c",
+                    "secondary-fixed-dim": "#00daf3",
+                    "inverse-primary": "#005bc0",
+                    "on-background": "#dfe2eb",
+                    "secondary-container": "#00e3fd",
+                    "inverse-surface": "#dfe2eb",
+                    "primary-container": "#bcd0ff",
+                    "primary-fixed-dim": "#adc7ff",
+                    "on-primary-fixed-variant": "#004493",
+                    "surface-dim": "#10141a",
+                    "on-primary": "#002e68",
+                    "tertiary-fixed-dim": "#d1bcff",
+                    "on-tertiary-fixed-variant": "#5700c9",
+                    "surface-container-high": "#262a31",
+                    "error-container": "#93000a",
+                    "tertiary-container": "#d9c8ff",
+                    "primary-fixed": "#d8e2ff",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#353940",
+                    "background": "#10141a",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#0056b5",
+                    "outline": "#849396"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .neural-glow {
+            filter: blur(80px);
+            background: radial-gradient(circle, rgba(0, 227, 253, 0.15) 0%, rgba(16, 20, 26, 0) 70%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
 </head>
-<body>
-  <canvas class="neural-canvas" aria-hidden="true"></canvas>
-  <div class="noise-layer" aria-hidden="true"></div>
-
-  <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Ana sayfa">
-        <span class="brand-badge">EC</span>
-        <span class="brand-copy">
-          <strong>ECOSKUN Technology</strong>
-          <small>Digital Systems and Applied Intelligence</small>
-        </span>
-      </a>
-
-      <nav class="site-nav" aria-label="Ana menu">
-        <a href="#platform">Platform</a>
-        <a href="#capabilities">Yetkinlikler</a>
-        <a href="#ventures">Urunler</a>
-        <a href="#insights">Teknoloji Guncemi</a>
-        <a href="#contact">Iletisim</a>
-      </nav>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menuyu ac">
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Kurumsal Teknoloji Yuzeyi</p>
-          <h1>Yazilim, yapay zeka ve dijital operasyonlari ayni kurumsal cati altinda birlestiren yeni nesil teknoloji sayfasi.</h1>
-          <p class="hero-text">
-            ECOSKUN Technology; urun gelistirme, uygulama lansmani, otomasyon ve veri odakli sistem tasarimini
-            premium bir dijital yapi icerisinde sunmak uzere konumlanan kurumsal bir vitrindir. Sayfa; yayinlanan
-            uygulamalar, yeni teknoloji urunleri ve sektorel guncellemeler icin buyuyebilen merkezi bir merkeze donusturuldu.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#ventures">Urun Ekosistemini Incele</a>
-            <a class="button button-secondary" href="#insights">Teknoloji Guncemi</a>
-          </div>
-        </div>
-
-        <aside class="hero-board" aria-label="Kurumsal ozet paneli">
-          <div class="hero-panel hero-panel-primary">
-            <span class="panel-kicker">Operational Focus</span>
-            <strong>Kurumsal yazilim altyapisi, gelisen urun portfoyu ve AI destekli dijital deneyimler.</strong>
-          </div>
-          <div class="hero-stats">
-            <article>
-              <span>01</span>
-              <h2>Kurumsal Kimlik</h2>
-              <p>Kisisel portfoy dili yerine firma standardinda sade, guven veren ve premium bir pozisyonlama.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h2>Urun Merkezi</h2>
-              <p>App Store uygulamalari, gelisen projeler ve gelecek lansmanlar icin hazir yayin alani.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h2>Teknoloji Haberleri</h2>
-              <p>Zamanla eklenecek trendler, yapay zeka haberleri ve sirket guncellemeleri icin ayri modul.</p>
-            </article>
-          </div>
-        </aside>
-      </section>
-
-      <section class="marquee" aria-label="Odak basliklari">
-        <div class="marquee-track">
-          <span>AI Enhanced Systems</span>
-          <span>Corporate Web Presence</span>
-          <span>Product Showcase</span>
-          <span>Technology Newsroom</span>
-          <span>App Store Promotion</span>
-          <span>Digital Operations</span>
-        </div>
-      </section>
-
-      <section class="section section-grid" id="platform">
-        <div class="section-heading">
-          <p class="eyebrow">Platform Mimarisi</p>
-          <h2>Kurumsal teknoloji markasi gibi davranan, gelecekte buyumeye uygun ana yapi.</h2>
-        </div>
-
-        <div class="platform-layout">
-          <article class="feature-card feature-card-large">
-            <p class="card-label">Ana Sunum Katmani</p>
-            <h3>Kurumsal acilis deneyimi; guven, kalite ve teknoloji hissini ilk ekranda verir.</h3>
-            <p>
-              Yeni yapi; kontrollu tipografi, kararli bosluk sistemi, premium renk paleti ve hareketli sinir agi
-              arka planini ayni dilde birlestirir.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <p class="card-label">Moduler Icerik</p>
-            <h3>Yeni urunler, uygulama tanitimlari ve haber kartlari kolayca eklenebilir.</h3>
-          </article>
-
-          <article class="feature-card">
-            <p class="card-label">Kurumsal Konumlama</p>
-            <h3>Ben dili yerine cozum, yapi ve teknoloji odagini one cikarir.</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="capabilities">
-        <div class="section-heading">
-          <p class="eyebrow">Yetkinlikler</p>
-          <h2>Markanin anlatmak istedigi teknoloji alanlari tek bakista anlasilir hale getirildi.</h2>
-        </div>
-
-        <div class="capability-grid">
-          <article class="capability-card">
-            <span class="capability-index">A1</span>
-            <h3>Kurumsal Web Arayuzu</h3>
-            <p>Premium gorunumlu, gelecekte kurumsal sayfalara ve detay ekranlarina genisleyebilen modern deneyim.</p>
-          </article>
-          <article class="capability-card">
-            <span class="capability-index">A2</span>
-            <h3>Urun ve Uygulama Sunumu</h3>
-            <p>Yayinda olan uygulamalar ile sonraki lansmanlar icin ayri tanitim bloklari ve guven odakli yapi.</p>
-          </article>
-          <article class="capability-card">
-            <span class="capability-index">A3</span>
-            <h3>AI Destekli Estetik</h3>
-            <p>Hareketli sinir agi arka plani ile teknoloji hissi veren ama okunabilirligi bozmayan rafine atmosfer.</p>
-          </article>
-          <article class="capability-card">
-            <span class="capability-index">A4</span>
-            <h3>Guncel Icerik Merkezi</h3>
-            <p>Teknoloji haberleri, urun duyurulari ve sektor icgoru notlari icin gelecege hazir bolumleme.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-dark" id="ventures">
-        <div class="section-heading">
-          <p class="eyebrow">Urun Ekosistemi</p>
-          <h2>Bugunun urunlerini tanitmak ve yarinin uygulamalarini eklemek icin kurulan kurumsal vitrin.</h2>
-        </div>
-
-        <div class="venture-layout">
-          <article class="venture-card venture-card-highlight">
-            <p class="card-label">App Store Showcase</p>
-            <h3>Guitar Setlist Pro, App Store'da yayinda olan ilk urun olarak vitrinde konumlandi.</h3>
-            <p>
-              Muzisyenler icin gelistirilen bu urun; setlist, sarki ve sahne akisini hizli yonetmeye odaklanir.
-              Kurgu; urunun marketteki olgunlugunu, kullanim senaryosunu ve tanitim akisini kurumsal dille one cikarir.
-            </p>
-
-            <div class="product-showcase">
-              <div class="product-icon" aria-hidden="true">APP</div>
-              <div class="product-copy">
-                <span class="product-badge">App Store'da Yayinda</span>
-                <h4>Guitar Setlist Pro</h4>
-                <p>Live setlists for musicians. Setlistleri yonetmek, sarkilari duzenlemek ve hizli sahne hazirligi icin tasarlanan mobil deneyim.</p>
-              </div>
-            </div>
-
-            <ul class="metric-strip" aria-label="Urun metrikleri">
-              <li>
-                <strong>Platform</strong>
-                <span>iOS / App Store</span>
-              </li>
-              <li>
-                <strong>Odak</strong>
-                <span>Musician Workflow</span>
-              </li>
-              <li>
-                <strong>Rol</strong>
-                <span>Flagship Product</span>
-              </li>
-            </ul>
-
-            <ul class="list-clean product-points">
-              <li>Setlist, song ve quick tools akisini tek uygulamada birlestirir.</li>
-              <li>Manage your setlists yapisiyla sarki ekleme ve siralama surecini hizlandirir.</li>
-              <li>Smart editor ile chord detection odakli akilli duzenleme deneyimi sunar.</li>
-            </ul>
-
-            <div class="inline-actions">
-              <a class="button button-primary" href="https://apps.apple.com/tr/app/guitar-setlist-pro/id6761498770" target="_blank" rel="noreferrer">App Store'da Goruntule</a>
-              <a class="button button-secondary" href="#insights">Urun Haberlerine Gec</a>
-            </div>
-          </article>
-
-          <article class="venture-card">
-            <p class="card-label">Roadmap Slot</p>
-            <h3>Hazirlanan uygulamalar ve yeni dijital araclar icin genisleme alanlari.</h3>
-            <ul class="list-clean">
-              <li>Yakinda yayinlanacak urun bloklari</li>
-              <li>Kurumsal referans ve vaka kutulari</li>
-              <li>Servis ve platform detay sayfalari</li>
-            </ul>
-          </article>
-
-          <article class="venture-card">
-            <p class="card-label">Deployment Ready</p>
-            <h3>Statik ve hizli yapi GitHub Pages uzerinden sorunsuz yayin icin optimize edildi.</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="insights">
-        <div class="section-heading">
-          <p class="eyebrow">Teknoloji Guncemi</p>
-          <h2>Yapay zeka, urun gelistirme ve dijital donusum basliklari icin editorial alan.</h2>
-        </div>
-
-        <div class="insight-grid">
-          <article class="insight-card insight-card-featured">
-            <p class="card-label">Lead Story</p>
-            <span class="news-meta">AI / Analiz / Haftalik Guncelleme</span>
-            <h3>Ana teknoloji haberi icin one cikan editorial kart alani.</h3>
-            <p>
-              Bu alan; yapay zeka, otomasyon veya urun gelistirme odakli en onemli guncellemeyi one cikarmak icin
-              kurgulandi. Baslik, kisa analiz ve detay sayfasina gecis ayni kartta toplanir.
-            </p>
-            <a class="text-link" href="#contact">Ilk haber basligini birlikte yerlestirebiliriz</a>
-          </article>
-
-          <article class="insight-stack">
-            <article class="insight-card insight-card-mini">
-              <p class="card-label">News Slot 01</p>
-              <span class="news-meta">Urun / Duyuru</span>
-              <h3>Yeni yayinlanan urun veya versiyon guncellemesi icin hizli kart.</h3>
-            </article>
-
-            <article class="insight-card insight-card-mini">
-              <p class="card-label">News Slot 02</p>
-              <span class="news-meta">Trend / AI</span>
-              <h3>Sektorde one cikan AI trendi ya da teknolojik gelisme ozeti.</h3>
-            </article>
-          </article>
-
-          <article class="insight-card insight-card-side">
-            <p class="card-label">Publishing Logic</p>
-            <span class="news-meta">Yayin Akisi</span>
-            <h3>Kurumsal ana sayfadan haber arsivine gececek yapisal akis hazir.</h3>
-            <ul class="list-clean list-compact">
-              <li>Ana haber karti</li>
-              <li>Kisa guncelleme kartlari</li>
-              <li>Detay sayfasi baglantisi</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="contact-card">
-          <div class="contact-copy">
-            <p class="eyebrow">Iletisim ve Sonraki Adim</p>
-            <h2>Kurumsal yapi tamamlandi; siradaki asama icerik, uygulama kartlari ve canli baglantilarin eklenmesi.</h2>
-            <p>
-              App Store uygulamasi, teknoloji haberleri ve yayinlanacak yeni urunler icin gerekli alanlar olusturuldu.
-              Bundan sonraki genisleme adimlari bu temel uzerinden hizli sekilde ilerletilebilir.
-            </p>
-          </div>
-
-          <div class="contact-panel">
-            <a class="button button-primary" href="mailto:iletisim@example.com">Kurumsal Iletisim</a>
-            <a class="button button-secondary" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">
-              GitHub Presence
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#10141a]/60 backdrop-blur-xl bg-gradient-to-b from-[#1c2026] to-transparent shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]">
+<nav class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto font-['Space_Grotesk'] tracking-tight">
+<a class="text-2xl font-bold text-cyan-400 tracking-tighter" href="./index.html">ECOSKUN</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded-lg" href="./solutions.html">Solutions</a>
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded-lg" href="./solutions.html">Programs</a>
+<a class="text-cyan-400 border-b-2 border-cyan-400 pb-1" href="./app-store.html">App Store</a>
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded-lg" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">About</a>
+</div>
+<a class="bg-gradient-to-r from-secondary-container to-on-secondary-container text-on-secondary-fixed px-6 py-2 rounded-xl font-medium hover:scale-[0.98] transition-transform duration-200 inline-block" href="./app-store.html">
+                Explore App
             </a>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-12 overflow-hidden">
+<!-- Neural Network Background Effect -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] neural-glow"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] neural-glow opacity-50"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="abstract neural network visualization with glowing blue nodes and connecting lines on a deep obsidian black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHnClj8LOlrPF-oKs5R_v5t3mK0sLAyisizXxMZ92BRw0BdSGkEcKE1qMN-XXynQTDFJokj5qtNMibGqSEu8P-NALvBARUqeeZtOybL4Symy6GHxLld2dh4JltRbP2Fasdgsn8iudgbug9_78b7I5z1TcBPNGNIoGqEMvjt7esvqjYY2WNrc5KgK6wnIjSxlidr_WMDp10vi3-lbNBcuJ2gHLUxR1BY5_S9TxJpVoZFqOdbHJAbZQeSgL-9s8JsFKQO7lMBOR4KPD9"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+                    ECOSKUN Technology: <span class="text-secondary">Architecting</span> the Future of Intelligence
+                </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl font-light leading-relaxed mb-10">
+                    We create intentional, high-precision AI solutions that operate with editorial precision. Moving beyond standard models to deliver an invisible, sophisticated force for enterprise evolution.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-secondary-container to-on-secondary-container text-on-secondary-fixed px-8 py-4 rounded-xl font-semibold text-lg flex items-center gap-2 group">
+                        Explore Our Ecosystem
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest/40 border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-semibold text-lg glass-panel">
+                        View Solutions
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Solutions Section -->
+<section class="py-24 px-12 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-4 tracking-tight">Precision Curated AI</h2>
+<p class="text-on-surface-variant text-lg">Our architectural approach focuses on three pillars of neural sophistication: Clarity, Performance, and Ethical Depth.</p>
+</div>
+<div class="flex gap-2 mb-2">
+<span class="w-12 h-1 bg-secondary rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 rounded-xl bg-surface-container overflow-hidden group">
+<div class="p-10 flex flex-col h-full justify-between">
+<div>
+<span class="text-secondary-fixed text-sm font-bold tracking-widest uppercase mb-4 block">Core Engine</span>
+<h3 class="font-headline text-3xl font-bold mb-6">Omni-Channel Cognitive Synthesis</h3>
+<p class="text-on-surface-variant max-w-md">Processing petabytes of unstructured data into actionable strategic intelligence with sub-millisecond latency.</p>
+</div>
+<div class="mt-12 flex items-center gap-4">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-surface-container bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm">neurology</span>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface-container bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm">memory</span>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface-container bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm">hub</span>
+</div>
+</div>
+<span class="text-on-surface-variant text-sm font-medium">Powering 2,400+ Enterprise Nodes</span>
+</div>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="rounded-xl bg-surface-container-high border border-outline-variant/10 p-10 flex flex-col justify-between">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl">security</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4">Neural Shield™</h3>
+<p class="text-on-surface-variant">Autonomous threat detection and predictive risk mitigation for decentralized data networks.</p>
+</div>
+<a class="mt-8 text-secondary-fixed font-medium flex items-center gap-2 hover:underline underline-offset-8 transition-all" href="./solutions.html">
+                        Deep Dive <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<!-- Secondary Cards -->
+<div class="rounded-xl bg-surface-container-low p-10 group hover:bg-surface-container-highest transition-colors">
+<h3 class="font-headline text-2xl font-bold mb-4">Elastic Scalability</h3>
+<p class="text-on-surface-variant">Compute resources that breathe with your demand, optimizing costs without sacrificing output speed.</p>
+</div>
+<div class="rounded-xl bg-surface-container p-10 border border-outline-variant/5">
+<h3 class="font-headline text-2xl font-bold mb-4">Ethical Guardrails</h3>
+<p class="text-on-surface-variant">Transparent decision-making paths that align with global compliance standards and human-centric values.</p>
+</div>
+<div class="rounded-xl bg-gradient-to-br from-surface-container to-[#001f24] p-10 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="" class="w-full h-full object-cover" data-alt="geometric tech pattern with microscopic details and glowing cyan light pulses in a futuristic style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZdHNpaY8u1vPZPiZMB7Ejqt0Q26oXcClF3rjipBqpGyEI_OvwtLmx0rb3m0ySEfGepUGwjGlSMAOp2ZZs_svBivaCL8YvI2IicVrAJAeNT9QF4_6oU67RSbaNbyhnfqU9Gf1slV6DhUUkp8iFMCFrTiHDPpbj03IUbzxo1epMKGS9282oh3nAGiwmMV96ByV29zC86o6EgB30hbJF_c9WjvBSbZYP3jM7ysxjp4TrfS_fKnWiR-BgKyhGE9r8v4nA2ZXF0ecpt1oR"/>
+</div>
+<div class="text-center relative z-10">
+<div class="text-4xl font-headline font-bold text-secondary-fixed mb-2">99.9%</div>
+<div class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Reliability Metric</div>
+</div>
+</div>
+</div>
+</section>
+<!-- App Store Showcase -->
+<section class="py-32 bg-surface-container-lowest relative">
+<div class="px-12 max-w-screen-2xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Top AI Apps</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg mb-8">The ECOSKUN Technology ecosystem in the palm of your hand. Discover the flagship mobile experience now available on the App Store.</p>
+<div class="flex justify-center">
+<a class="bg-black border border-white/20 px-8 py-3 rounded-xl flex items-center gap-3 hover:bg-zinc-900 transition-colors" href="./app-store.html">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">ios</span>
+<div class="text-left leading-tight">
+<div class="text-[10px] uppercase font-bold tracking-tighter text-zinc-400">Download on the</div>
+<div class="text-lg font-bold text-white">App Store</div>
+</div>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- App Card 1 -->
+<div class="rounded-xl bg-surface-container-high p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+<div class="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-cyan-400 to-blue-600 shadow-2xl mb-6 flex items-center justify-center transform group-hover:rotate-3 transition-transform">
+<span class="material-symbols-outlined text-5xl text-white">insights</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2">CoreSync</h4>
+<p class="text-on-surface-variant text-sm mb-6">Real-time neural analytics for executive decision making.</p>
+<div class="flex items-center gap-1 text-secondary-fixed text-xs font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 4.9 · 12K Reviews
+                        </div>
+</div>
+<!-- App Card 2 -->
+<div class="rounded-xl bg-surface-container-high p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+<div class="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-purple-500 to-indigo-700 shadow-2xl mb-6 flex items-center justify-center transform group-hover:rotate-3 transition-transform">
+<span class="material-symbols-outlined text-5xl text-white">psychology</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2">NeuralMind</h4>
+<p class="text-on-surface-variant text-sm mb-6">Personal AI assistant with advanced linguistic reasoning.</p>
+<div class="flex items-center gap-1 text-secondary-fixed text-xs font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 4.8 · 45K Reviews
+                        </div>
+</div>
+<!-- App Card 3 -->
+<div class="rounded-xl bg-surface-container-high p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+<div class="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-emerald-400 to-cyan-600 shadow-2xl mb-6 flex items-center justify-center transform group-hover:rotate-3 transition-transform">
+<span class="material-symbols-outlined text-5xl text-white">terminal</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2">FluxCode</h4>
+<p class="text-on-surface-variant text-sm mb-6">Autonomous code generation for distributed architectures.</p>
+<div class="flex items-center gap-1 text-secondary-fixed text-xs font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 4.7 · 8K Reviews
+                        </div>
+</div>
+<!-- App Card 4 -->
+<div class="rounded-xl bg-surface-container-high p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+<div class="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-rose-500 to-orange-600 shadow-2xl mb-6 flex items-center justify-center transform group-hover:rotate-3 transition-transform">
+<span class="material-symbols-outlined text-5xl text-white">architecture</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2">BluePrint AI</h4>
+<p class="text-on-surface-variant text-sm mb-6">Generate complex system designs from natural language prompts.</p>
+<div class="flex items-center gap-1 text-secondary-fixed text-xs font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 5.0 · 3K Reviews
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-12">
+<div class="max-w-5xl mx-auto rounded-xl bg-surface-container border border-outline-variant/10 p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-5 blur-[100px]"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 text-center md:text-left">
+<h2 class="font-headline text-4xl font-bold mb-4">Stay Synchronized</h2>
+<p class="text-on-surface-variant">Receive weekly insights on neural architecture and the evolution of digital intelligence.</p>
+</div>
+<div class="flex-1 w-full max-w-md">
+<form class="flex gap-2">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-secondary text-on-surface" placeholder="Your work email" type="email"/>
+<button class="bg-secondary-container text-on-secondary-fixed font-bold px-8 py-4 rounded-xl hover:bg-secondary-fixed-dim transition-colors" type="submit">Join</button>
+</form>
+<p class="text-[10px] text-on-surface-variant mt-4 text-center md:text-left">By joining, you agree to our Terms of Service and Privacy Policy.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#3b494c]/15 tonal-shift bg-[#1c2026] mt-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 py-16 max-w-screen-2xl mx-auto font-['Inter'] leading-relaxed">
+<div class="space-y-4">
+<div class="text-xl font-bold text-cyan-400">ECOSKUN Technology</div>
+<p class="text-[#bac9cc] text-sm">Building premium software experiences, digital systems and applied intelligence products for modern workflows.</p>
+<div class="flex gap-4 pt-4">
+<a class="text-[#bac9cc] hover:text-cyan-300 duration-300" href="https://erhancoskun06.github.io/" target="_blank" rel="noreferrer">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-[#bac9cc] hover:text-cyan-300 duration-300" href="mailto:imteserhan@gmail.com">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold tracking-wider text-xs uppercase">Platform</h5>
+<ul class="space-y-2">
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./app-store.html">App Store</a></li>
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./solutions.html">Programs</a></li>
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./solutions.html">Solutions</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold tracking-wider text-xs uppercase">Company</h5>
+<ul class="space-y-2">
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="mailto:imteserhan@gmail.com">Contact Support</a></li>
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">GitHub</a></li>
+<li><a class="text-[#bac9cc] hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./index.html">Homepage</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold tracking-wider text-xs uppercase">Legal</h5>
+<p class="text-[#bac9cc] text-sm leading-relaxed">
+                    ECOSKUN Technology. All rights reserved for 2026.
+                </p>
+<div class="pt-2">
+<span class="text-cyan-400 font-semibold">© 2026 ECOSKUN Technology.</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

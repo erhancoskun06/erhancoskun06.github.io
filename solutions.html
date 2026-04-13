@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ECOSKUN Technology | Programs &amp; Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#1c2026",
+                        "on-secondary-container": "#00616d",
+                        "secondary": "#bdf4ff",
+                        "on-surface": "#dfe2eb",
+                        "outline-variant": "#3b494c",
+                        "tertiary": "#f2e9ff",
+                        "surface-tint": "#adc7ff",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#31353c",
+                        "on-primary-fixed": "#001a41",
+                        "on-secondary": "#00363d",
+                        "on-tertiary-fixed": "#23005b",
+                        "tertiary-fixed": "#e9ddff",
+                        "secondary-fixed": "#9cf0ff",
+                        "inverse-on-surface": "#2d3137",
+                        "surface": "#10141a",
+                        "on-tertiary": "#3c0090",
+                        "surface-container-lowest": "#0a0e14",
+                        "primary": "#e7ecff",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "on-surface-variant": "#bac9cc",
+                        "on-tertiary-container": "#6c00f7",
+                        "surface-container-low": "#181c22",
+                        "on-secondary-fixed": "#001f24",
+                        "surface-variant": "#31353c",
+                        "secondary-fixed-dim": "#00daf3",
+                        "inverse-primary": "#005bc0",
+                        "on-background": "#dfe2eb",
+                        "secondary-container": "#00e3fd",
+                        "inverse-surface": "#dfe2eb",
+                        "primary-container": "#bcd0ff",
+                        "primary-fixed-dim": "#adc7ff",
+                        "on-primary-fixed-variant": "#004493",
+                        "surface-dim": "#10141a",
+                        "on-primary": "#002e68",
+                        "tertiary-fixed-dim": "#d1bcff",
+                        "on-tertiary-fixed-variant": "#5700c9",
+                        "surface-container-high": "#262a31",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#d9c8ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#353940",
+                        "background": "#10141a",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#0056b5",
+                        "outline": "#849396"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #10141a;
+            color: #dfe2eb;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(53, 57, 64, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .neural-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #bdf4ff;
+            filter: blur(120px);
+            opacity: 0.05;
+            z-index: -1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#10141a]/60 backdrop-blur-xl bg-gradient-to-b from-[#1c2026] to-transparent shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto font-['Space_Grotesk'] tracking-tight">
+<a class="text-2xl font-bold text-cyan-400 tracking-tighter" href="./index.html">ECOSKUN</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded" href="./solutions.html">Solutions</a>
+<a class="text-cyan-400 border-b-2 border-cyan-400 pb-1" href="./solutions.html">Programs</a>
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded" href="./app-store.html">App Store</a>
+<a class="text-[#bac9cc] hover:text-white transition-colors hover:bg-white/5 px-3 py-1 rounded" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">About</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="hidden lg:flex items-center bg-surface-container-lowest px-4 py-2 rounded-full border border-outline-variant/15">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 text-on-surface placeholder:text-on-surface-variant/50" placeholder="Search neural nodes..." type="text"/>
+</div>
+                <a class="bg-gradient-to-r from-secondary-container to-on-secondary-container text-on-secondary-fixed px-6 py-2 rounded-md font-medium text-sm active:scale-95 duration-200 transition-all inline-block" href="./app-store.html">
+                    Open App Store
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto relative overflow-hidden">
+<!-- Background Decorations -->
+<div class="neural-glow top-0 right-0"></div>
+<div class="neural-glow bottom-1/4 left-0"></div>
+<!-- Header Section -->
+<header class="mb-20 max-w-3xl">
+<div class="inline-block px-3 py-1 mb-6 rounded-full bg-secondary-container/10 border border-secondary-container/20">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">System Architecture</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface leading-[1.1] mb-8">
+                Programs &amp; <span class="text-secondary-fixed-dim">Solutions</span>
+</h1>
+<p class="text-on-surface-variant text-xl leading-relaxed">
+                A modular ecosystem of artificial intelligence frameworks designed to evolve with your enterprise. From custom neural bridges to autonomous predictive engines.
+            </p>
+</header>
+<!-- Bento Grid Solutions -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- Large Feature: Custom AI Integration -->
+<div class="md:col-span-8 group relative bg-surface-container rounded-xl overflow-hidden p-8 hover:bg-surface-container-high transition-all duration-500">
+<div class="relative z-10 h-full flex flex-col">
+<div class="flex justify-between items-start mb-12">
+<div class="w-16 h-16 rounded-xl bg-secondary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="hub">hub</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-secondary transition-colors" data-icon="north_east">north_east</span>
+</div>
+<div class="mt-auto">
+<h3 class="font-headline text-3xl font-bold mb-4">Custom AI Integration</h3>
+<p class="text-on-surface-variant text-lg max-w-lg">
+                            Seamlessly weave neural intelligence into your existing infrastructure with bespoke API bridges and dedicated hardware acceleration.
+                        </p>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract 3D visualization of glowing neural network paths and data nodes in a dark void with cyan accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYX8UDMAIkESHmhIY2VrZ4lMoXDFEcj1LtaHJzOMqQJuaICk3q80kmlwIBUqwLgm8VTTsz5RXNke3w3b70WaxUGvuNpXepcTKGyzS3E73kTjySENvRnsva0_jCgnZHDfNBPiUxrVI5ih0X2WE3VGbtCMc8xKrm9AUZUsoxaZMrVAIZ6ncrWmHW70RPRjdA7w9OYZbJejlhzorW-7GxUVr-exCfK83tHcc6MEE5fG4Qgn7-SPIoQ0xXCSrmvSotItCQvmgCwnXYxmGi"/>
+</div>
+</div>
+<!-- Small Feature: Predictive Analytics -->
+<div class="md:col-span-4 group bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-500 flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary-fixed-dim text-2xl" data-icon="query_stats">query_stats</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Predictive Analytics</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                    Anticipate market shifts with 99.4% accuracy using our proprietary deep-learning forecasting engine.
+                </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<div class="flex items-center text-secondary text-sm font-semibold">
+<span>Explore Framework</span>
+<span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Medium Feature: NLP Models -->
+<div class="md:col-span-4 group bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-500">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container/20 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-2xl" data-icon="forum">forum</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">NLP Models</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Human-centric language processing that understands context, tone, and technical nuance across 120+ dialects.
+                </p>
+</div>
+<!-- Medium Feature: Computer Vision -->
+<div class="md:col-span-4 group bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-500">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Computer Vision</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Real-time visual data extraction for logistics, healthcare, and high-precision manufacturing environments.
+                </p>
+</div>
+<!-- Medium Feature: Edge Computing -->
+<div class="md:col-span-4 group bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-500">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-surface text-2xl" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Edge Computing</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Run complex AI models locally on-device with zero-latency requirements and hardware-grade security protocols.
+                </p>
+</div>
+</div>
+<!-- Vertical Program List (Editorial Style) -->
+<section class="mt-32">
+<div class="flex items-center justify-between mb-16">
+<h2 class="font-headline text-4xl font-bold">Specialized Programs</h2>
+<div class="h-[1px] flex-grow mx-8 bg-outline-variant/20 hidden md:block"></div>
+</div>
+<div class="space-y-4">
+<!-- Program Item 1 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-highest transition-all duration-300">
+<div class="flex items-center gap-6 mb-4 md:mb-0">
+<div class="text-secondary-fixed text-sm font-mono opacity-50">01</div>
+<div>
+<h4 class="font-headline text-xl font-bold">ECOSKUN Academy</h4>
+<p class="text-on-surface-variant text-sm">Certification and hands-on training for enterprise developers.</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="hidden lg:flex gap-2">
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Educational</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Q4 Cohort</span>
+</div>
+<button class="text-secondary-fixed font-medium flex items-center group-hover:translate-x-2 transition-transform">
+                            Details <span class="material-symbols-outlined ml-2 text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Program Item 2 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-highest transition-all duration-300">
+<div class="flex items-center gap-6 mb-4 md:mb-0">
+<div class="text-secondary-fixed text-sm font-mono opacity-50">02</div>
+<div>
+<h4 class="font-headline text-xl font-bold">Startup Catalyst</h4>
+<p class="text-on-surface-variant text-sm">Equity-free compute credits and architectural mentoring for AI startups.</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="hidden lg:flex gap-2">
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Venture</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Global</span>
+</div>
+<button class="text-secondary-fixed font-medium flex items-center group-hover:translate-x-2 transition-transform">
+                            Apply <span class="material-symbols-outlined ml-2 text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Program Item 3 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-highest transition-all duration-300">
+<div class="flex items-center gap-6 mb-4 md:mb-0">
+<div class="text-secondary-fixed text-sm font-mono opacity-50">03</div>
+<div>
+<h4 class="font-headline text-xl font-bold">Quantum Readiness</h4>
+<p class="text-on-surface-variant text-sm">Preparing data architecture for the next shift in computational logic.</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="hidden lg:flex gap-2">
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Research</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[10px] text-on-surface-variant border border-outline-variant/10 uppercase">Experimental</span>
+</div>
+<button class="text-secondary-fixed font-medium flex items-center group-hover:translate-x-2 transition-transform">
+                            Waitlist <span class="material-symbols-outlined ml-2 text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-40 rounded-2xl overflow-hidden relative p-12 md:p-24 bg-surface-container-low text-center">
+<div class="neural-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20 scale-150"></div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight">Ready to curate your <span class="text-secondary">digital future?</span></h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">Our consultants are available for a deep-dive architectural audit of your current systems.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-gradient-to-r from-secondary-container to-on-secondary-container text-on-secondary-fixed px-10 py-4 rounded-md font-bold text-lg active:scale-95 duration-200 shadow-xl">
+                    Schedule Audit
+                </button>
+<button class="bg-surface-container-highest text-on-surface border border-outline-variant/30 px-10 py-4 rounded-md font-bold text-lg hover:bg-surface-bright transition-colors">
+                    View Case Studies
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#3b494c]/15 bg-[#10141a] font-['Inter'] leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-cyan-400 mb-6">ECOSKUN Technology</div>
+<p class="text-[#bac9cc] text-sm mb-6">
+                    Building the digital backbone for premium software products, applied intelligence and scalable program ecosystems.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#bac9cc] cursor-pointer hover:text-cyan-400">public</span>
+<span class="material-symbols-outlined text-[#bac9cc] cursor-pointer hover:text-cyan-400">terminal</span>
+<span class="material-symbols-outlined text-[#bac9cc] cursor-pointer hover:text-cyan-400">language</span>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Product</h5>
+<ul class="space-y-4 text-[#bac9cc] text-sm">
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./index.html">Homepage</a></li>
+<li><a class="text-cyan-400 font-semibold underline-offset-4 hover:underline" href="./solutions.html">Programs</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./app-store.html">App Store</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./solutions.html">Solutions</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Company</h5>
+<ul class="space-y-4 text-[#bac9cc] text-sm">
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./index.html">About</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="https://github.com/erhancoskun06" target="_blank" rel="noreferrer">GitHub</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="mailto:imteserhan@gmail.com">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Legal</h5>
+<ul class="space-y-4 text-[#bac9cc] text-sm">
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./index.html">Homepage</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="./app-store.html">App Store</a></li>
+<li><a class="hover:text-cyan-300 underline-offset-4 hover:underline duration-300" href="mailto:imteserhan@gmail.com">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 max-w-screen-2xl mx-auto border-t border-outline-variant/10 text-center md:text-left">
+<span class="text-[#bac9cc] text-xs">© 2026 ECOSKUN Technology.</span>
+</div>
+</footer>
+</body></html>

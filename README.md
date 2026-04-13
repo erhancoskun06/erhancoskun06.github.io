@@ -1,30 +1,18 @@
-# ECOSKUN Technology Landing Page
+# ECOSKUN Technology Pages
 
-Bu klasor, `erhancoskun06.github.io` adresi icin hazirlanan kurumsal teknoloji odakli statik ana sayfayi icerir.
+Bu repo, GitHub Pages uzerinde yayinlanan yeni cok sayfali tasarimi icerir.
 
-## Icerik
+## Sayfalar
 
-- `index.html`: Sirket diliyle yeniden yazilan ana sayfa
-- `styles.css`: Premium gorunum, responsive duzen ve gorsel sistem
-- `script.js`: Mobil menu davranisi ve hareketli AI sinir agi arka plan animasyonu
-- `.nojekyll`: GitHub Pages statik dagitim uyumlulugu
+- `index.html`: Ana sayfa
+- `solutions.html`: Programs & Solutions sayfasi
+- `app-store.html`: App Store tanitim sayfasi
+- `.nojekyll`: GitHub Pages uyumlulugu
 
-## Yeni Yapi
+## Kaynak
 
-- Kisisel portfoy dili kaldirildi.
-- Kurumsal firma sunumu odakli yeni bir bilgi mimarisi kuruldu.
-- App Store urunu, gelecek uygulamalar ve teknoloji haberleri icin hazir bolumler eklendi.
-- Arka planda canvas tabanli hareketli sinir agi animasyonu tasarlandi.
+Bu yayin, kullanici tarafindan saglanan `stitch.zip` tasarim ciktilari temel alinarak yayina alinmistir.
 
-## Yayin
+## Not
 
-1. Repo adi `erhancoskun06.github.io` olacak sekilde GitHub'da public olarak olusturulmalidir.
-2. Dosyalar repo kokune eklenmelidir.
-3. GitHub Pages ayari `Deploy from a branch > main > /root` olarak secilmelidir.
-4. Yayin tamamlandiginda site `https://erhancoskun06.github.io/` adresinden erisilebilir olur.
-
-## Sonraki Guncellemeler
-
-- `mailto:iletisim@example.com` alani gercek kurumsal e-posta ile degistirilebilir.
-- App Store uygulama alani; urun adi, store linki ve ekran goruntuleri ile doldurulabilir.
-- Teknoloji haberleri bolumu daha sonra kart veya liste bazli gercek icerikle genisletilebilir.
+`app-store.html` icindeki ana uygulama baglantisi `Guitar Setlist Pro` App Store adresine yonlendirilir.
