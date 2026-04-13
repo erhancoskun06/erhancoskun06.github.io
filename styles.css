@@ -558,6 +558,10 @@ a {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.product-points {
+  margin-top: 18px;
+}
+
 .text-link {
   display: inline-flex;
   margin-top: 20px;
